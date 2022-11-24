@@ -131,25 +131,25 @@ main > section#sobre > h2 {
 }
 
 main > section#sobre > article.sobre-mo {
-    display: flex;
-    align-content: flex-start;
-    flex-direction: row;
-    justify-content: space-around;
-
     font-family: var(--fonte-p);
     font-size: 1em;
     color: var(--cor2);
+
+    width: 80vw;
+    margin: auto;
 }
 
-main > section#sobre > article.sobre-mo > aside {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+main > section#sobre > article.sobre-mo > div.hist {
+    text-align: center;
 
-    width: 36vw;
+    border-bottom: 1px solid var(--cor4);
 }
 
-main > section#sobre > article.sobre-mo > aside > h3 {
+main > section#sobre > article.sobre-mo > div.hist > p {
+    margin-bottom: 30px;
+}
+
+main > section#sobre > article.sobre-mo > div.hist > h3 {
     font-family: var(--fonte-p);
     font-size: 1.5em;
     font-weight: 500;
@@ -159,17 +159,41 @@ main > section#sobre > article.sobre-mo > aside > h3 {
     margin: 30px 0px 25px 0px;
 }
 
-main > section#sobre > article.sobre-mo > aside > p {
+main > section#sobre > article.sobre-mo > div.mv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+main > section#sobre > article.sobre-mo > div.mv > aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 36vw;
+}
+
+main > section#sobre > article.sobre-mo > div.mv > aside > h3 {
+    font-family: var(--fonte-p);
+    font-size: 1.5em;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--cor2);
+
+    margin: 30px 0px 25px 0px;
+}
+
+main > section#sobre > article.sobre-mo > div.mv > aside > p {
     text-align: center;
     font-size: 1em;
 }
 
-main > section#sobre > article.sobre-mo > aside > div.sep {
+main > section#sobre > article.sobre-mo > div.mv > aside > div.sep {
     font-size: 1em;
 
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
 
     width: 35vw;
 }
