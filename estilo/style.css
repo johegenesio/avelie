@@ -86,7 +86,7 @@ main > section#perfume-especial > article > div.card {
     border-radius: 0%;
 }
 
-main > section#perfume-especial > article > div.card > img {
+main > section#perfume-especial > article > div.card > picture > .card-img-top {
     border-radius: 0%;
 }
 
@@ -115,7 +115,7 @@ main > section#perfume > article > div.card {
     border-radius: 0%;
 }
 
-main > section#perfume > article > div.card > img {
+main > section#perfume > article > div.card > picture > .card-img-top {
     border-radius: 0%;
 }
 
