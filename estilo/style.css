@@ -123,6 +123,7 @@ main > section#perfume-especial > article > div.card {
 
 main > section#perfume-especial > article > div.card > picture > .card-img-top {
     border-radius: 0%;
+    border: none;
 }
 
 main > section#perfume > h2 {
