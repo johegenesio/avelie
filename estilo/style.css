@@ -47,6 +47,16 @@ header > nav {
     border-bottom: 1px solid var(--cor4);
 }
 
+@media (max-width: 650px) {
+    header > nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin-top: 5px;
+    }
+}
+
 header > nav > a {
     font-family: var(--fonte-p);
     font-size: 1.1em;
@@ -59,6 +69,7 @@ header > nav > a {
 
 header > nav > a:hover {
     color: #606060;
+    text-decoration: underline;
 }
 
 main > section#perfume-especial > h2 {
@@ -67,8 +78,7 @@ main > section#perfume-especial > h2 {
 
     margin: 0px;
 
-    display: flex;
-    justify-content: center;
+    text-align: center;
 
     padding: 40px 0px 40px 0px;
     border-bottom: 1px solid var(--cor4);
@@ -81,9 +91,34 @@ main > section#perfume-especial > article {
     margin: 50px 0px 50px 0px;
 }
 
+@media (max-width: 650px) {
+    main > section#perfume-especial > article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main > section#perfume-especial > article > div.card {
+        display: flex;
+        align-items: center;
+
+        margin-bottom: 25px;
+    }
+
+    main > section#perfume-especial > article > div.card:nth-child(2) {
+        margin-bottom: 0%;
+    }
+
+    main > section#perfume-especial > article > div.card > picture {
+        width: 80vw;
+    }
+}
+
+
 main > section#perfume-especial > article > div.card {
     width: 40vw;
     border-radius: 0%;
+    border: none;
 }
 
 main > section#perfume-especial > article > div.card > picture > .card-img-top {
@@ -110,9 +145,33 @@ main > section#perfume > article {
     margin: 50px 0px 50px 0px;
 }
 
+@media (max-width: 650px) {
+    main > section#perfume > article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main > section#perfume > article > div.card {
+        display: flex;
+        align-items: center;
+
+        margin-bottom: 25px;
+    }
+
+    main > section#perfume > article > div.card:nth-child(3) {
+        margin-bottom: 0%;
+    }
+
+    main > section#perfume > article > div.card > picture {
+        width: 80vw;
+    }
+}
+
 main > section#perfume > article > div.card {
     width: 24.6vw;
-    border-radius: 0%;
+    border-radius: 0%;  
+    border: none;
 }
 
 main > section#perfume > article > div.card > picture > .card-img-top {
@@ -123,8 +182,7 @@ main > section#sobre > h2 {
     font-family: var(--fonte-t);
     font-size: 2em;
 
-    display: flex;
-    justify-content: center;
+    text-align: center;
 
     padding: 40px 0px 40px 0px;
     border-bottom: 1px solid var(--cor4);
@@ -135,7 +193,7 @@ main > section#sobre > article.sobre-mo {
     font-size: 1em;
     color: var(--cor2);
 
-    width: 80vw;
+    width: 90vw;
     margin: auto;
 }
 
@@ -162,7 +220,7 @@ main > section#sobre > article.sobre-mo > div.hist > h3 {
 main > section#sobre > article.sobre-mo > div.mv {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 main > section#sobre > article.sobre-mo > div.mv > aside {
@@ -170,7 +228,7 @@ main > section#sobre > article.sobre-mo > div.mv > aside {
     flex-direction: column;
     align-items: center;
 
-    width: 36vw;
+    width: 40vw;
 }
 
 main > section#sobre > article.sobre-mo > div.mv > aside > h3 {
@@ -196,6 +254,20 @@ main > section#sobre > article.sobre-mo > div.mv > aside > div.sep {
     justify-content: space-between;
 
     width: 35vw;
+}
+
+@media (max-width: 1000px) {
+    main > section#sobre > article.sobre-mo > div.mv > aside > div.sep {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 600px) {
+    main > section#sobre > article.sobre-mo > div.mv > aside > div.sep {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 main > section#boutique > h2 {
